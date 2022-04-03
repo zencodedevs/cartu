@@ -37,20 +37,7 @@ namespace ConfirmAPI.Controllers
 
             var createdLog = await _paymentRepository.AddLog(log);
 
-            var payment = new Payment
-            {
-                TransactionId = model.TransactionId,
-                PaymentId = model.PaymentId,
-                PaymentDate = DateTime.Parse(model.PaymentDate),
-                Amount = model.Amount,
-                Status = model.Status,
-                Reason = model.Reason,
-                CardType = model.CardType
-            };
-
-            var createdPayment = await _paymentRepository.AddPayment(payment);
-
-            if (createdPayment != null)
+            if (createdLog != null)
             {
                 var response = new ConfirmResponse
                 {
@@ -65,9 +52,17 @@ namespace ConfirmAPI.Controllers
             return BadRequest();
         }
 
-        private string GetGuid()
+        [HttpGet]
+        [Route("GetUuid")]
+        [Produces("application/xml")]
+        public IActionResult GetUuid()
         {
-            return new Guid().ToString();
+            var response = new UuidResponse
+            {
+                Uuid = Guid.NewGuid().ToString()
+            };
+
+            return Ok(response);
         }
     }
 }

@@ -15,10 +15,9 @@ namespace Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=(localdb)\\mssqllocaldb; Database=Payments; Trusted_Connection=True;", b => b.MigrationsAssembly("ConfirmAPI"));
+            options.UseSqlServer(_configuration.GetConnectionString("WebApiDatabase"), b => b.MigrationsAssembly("ConfirmAPI"));
         }
 
-        public DbSet<Payment> Payments { get; set; }
         public DbSet<Log> Logs { get; set; }
 
         public string DbPath { get; }

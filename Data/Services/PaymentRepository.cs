@@ -13,14 +13,6 @@ namespace Data.Services
             _paymentContext = paymentContext;
         }
 
-        public async Task<Payment> AddPayment(Payment payment)
-        {
-            var result = await _paymentContext.Payments.AddAsync(payment);
-            await _paymentContext.SaveChangesAsync();
-
-            return result.Entity;
-        }
-
         public async Task<Log> AddLog(Log log)
         {
             var result = await _paymentContext.Logs.AddAsync(log);
