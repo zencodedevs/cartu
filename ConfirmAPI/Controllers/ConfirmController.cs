@@ -11,10 +11,13 @@ namespace ConfirmAPI.Controllers
     public class ConfirmController : ControllerBase
     {
         private readonly IPaymentRepository _paymentRepository;
+        private readonly ILogger<ConfirmController> _logger;
 
-        public ConfirmController(IPaymentRepository paymentRepository)
+
+        public ConfirmController(IPaymentRepository paymentRepository, ILogger<ConfirmController> logger)
         {
             _paymentRepository = paymentRepository;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -50,8 +53,30 @@ namespace ConfirmAPI.Controllers
             return BadRequest();
         }
 
+
+        
+
         [HttpGet]
         [Route("GetUuid")]
         public IActionResult GetUuid() => Ok(new UuidResponse { Uuid = Guid.NewGuid().ToString() });
+
+
+        [HttpGet]
+        [Route("LogTestData")]
+        public IActionResult LogTestData()
+        {
+
+            _logger.LogDebug("Debug message");
+            _logger.LogTrace("Didi Text For Trace COOOOOOOMFIRM LLLLL TTRX mmmIOT");
+            _logger.LogError("Didi Text For Error COOOOOOOMFIRM LLLLL TTRX mmmIOT");
+            _logger.LogWarning("Warning message");
+            _logger.LogCritical("Critical message");
+            _logger.LogInformation("Information message");
+
+
+
+
+            return Ok();
+        }
     }
 }
