@@ -21,18 +21,18 @@ namespace ConfirmAPI.Controllers
         }
 
         [HttpPost]
-        [Consumes("application/xml")]
+        [Consumes("application/x-www-form-urlencoded")]
         [Produces("application/xml")]
-        public async Task<IActionResult> Post([FromBody] ConfirmRequest model)
+        public async Task<IActionResult> Post([FromForm] string ConfirmRequest)
         {
-            if (model == null)
+            if (ConfirmRequest == null)
             {
                 return BadRequest();
             }
 
             var log = new Log
             {
-                RequestLog = model.Serialize(),
+                RequestLog = ConfirmRequest,
                 InsertDate = DateTime.Now
             };
 
@@ -40,10 +40,12 @@ namespace ConfirmAPI.Controllers
 
             if (createdLog != null)
             {
+                var request = ConfirmRequest.Deserialize<ConfirmRequest>();
+
                 var response = new ConfirmResponse
                 {
-                    TransactionId = model.TransactionId,
-                    PaymentId = model.PaymentId,
+                    TransactionId = request.TransactionId,
+                    PaymentId = request.PaymentId,
                     Status = "ACCEPTED"
                 };
 

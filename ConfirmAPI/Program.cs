@@ -1,3 +1,4 @@
+using ConfirmAPI.Options;
 using Core.Services.Interfaces;
 using Data.Contexts;
 using Data.Services;
@@ -22,8 +23,11 @@ try
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
     builder.Host.UseNLog();
 
-    builder.Services.AddControllers()
-        .AddXmlSerializerFormatters();
+
+    builder.Services.AddControllers(options =>
+    {
+        options.OutputFormatters.Add(new XmlSerializerOutputFormatterNoNamespace());
+    }).AddXmlSerializerFormatters();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
