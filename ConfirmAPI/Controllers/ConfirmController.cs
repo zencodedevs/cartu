@@ -36,6 +36,8 @@ namespace ConfirmAPI.Controllers
                 InsertDate = DateTime.Now
             };
 
+            _logger.LogTrace($"Log Request {ConfirmRequest}");
+
             var createdLog = await _paymentRepository.AddLog(log);
 
             if (createdLog != null)
@@ -69,8 +71,8 @@ namespace ConfirmAPI.Controllers
         {
 
             _logger.LogDebug("Debug message");
-            _logger.LogTrace("Didi Text For Trace COOOOOOOMFIRM LLLLL TTRX mmmIOT");
-            _logger.LogError("Didi Text For Error COOOOOOOMFIRM LLLLL TTRX mmmIOT");
+            _logger.LogTrace("Didi Text For Trace COOOOOOOMFIRM New LLLLL TTRX mmmIOT");
+            _logger.LogError("Didi Text For Error COOOOOOOMFIRM New LLLLL TTRX mmmIOT");
             _logger.LogWarning("Warning message");
             _logger.LogCritical("Critical message");
             _logger.LogInformation("Information message");
