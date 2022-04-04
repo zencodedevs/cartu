@@ -1,6 +1,6 @@
-﻿using Data.Contexts;
-using Core.Entities;
+﻿using Core.Entities;
 using Core.Services.Interfaces;
+using Data.Contexts;
 
 namespace Data.Services
 {

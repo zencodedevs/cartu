@@ -1,10 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using ConfirmAPI.Models;
+﻿using ConfirmAPI.Models;
 using Core.Entities;
 using Core.Helpers;
 using Core.Services.Interfaces;
-using Data.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ConfirmAPI.Controllers
 {
@@ -54,15 +52,6 @@ namespace ConfirmAPI.Controllers
 
         [HttpGet]
         [Route("GetUuid")]
-        [Produces("application/xml")]
-        public IActionResult GetUuid()
-        {
-            var response = new UuidResponse
-            {
-                Uuid = Guid.NewGuid().ToString()
-            };
-
-            return Ok(response);
-        }
+        public IActionResult GetUuid() => Ok(new UuidResponse { Uuid = Guid.NewGuid().ToString() });
     }
 }
