@@ -1,0 +1,7 @@
+{
+  "api_base_url": "https://mssp-api.zencode.io",
+  "api_mock_url": "API_URL",
+   "resourceMonitor": {
+    "pollingInterval": 20000
+  }
+}

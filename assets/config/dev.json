@@ -1,0 +1,7 @@
+{
+  "api_base_url": "https://localhost:5010",
+  "api_mock_url": "API_URL",
+  "resourceMonitor": {
+    "pollingInterval": 20000
+  }
+}

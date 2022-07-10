@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="900"
+   height="600"
+   id="flag_of_georgia"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   sodipodi:docname="Flag_of_Georgia.svg"
+   sodipodi:docbase="C:\Documents and Settings\Owner\Desktop">
+  <metadata
+     id="metadata5429">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="1005"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="1.0968937"
+     inkscape:cx="450"
+     inkscape:cy="300"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="flag_of_georgia" />
+  <desc
+     id="desc5407">Flag of Georgia</desc>
+  <defs
+     id="defs5409">
+    <g
+       id="f">
+      <rect
+         x="-65"
+         y="-40"
+         height="80"
+         width="130"
+         fill="#fff"
+         id="rect5412" />
+      <path
+         d="M -6.94119342,-20 a55,55 0 0,0 13.88238684,0 A104,104 0 0,0 5,-5 a104,104 0 0,0 15,-1.94119342 a55,55 0 0,0 0,13.88238684 A104,104 0 0,0 5,5 a104,104 0 0,0 1.94119342,15 a55,55 0 0,0 -13.88238684,0 A104,104 0 0,0 -5,5 a104,104 0 0,0 -15,1.94119342 a55,55 0 0,0 0,-13.88238684 A104,104 0 0,0 -5,-5 a104,104 0 0,0 -1.94119342,-15 z"
+         fill="#E8112D"
+         id="path5414" />
+    </g>
+  </defs>
+  <g
+     transform="scale(3)"
+     id="g5416">
+    <rect
+       height="200"
+       width="300"
+       fill="#E8112D"
+       id="rect5418" />
+    <use
+       xlink:href="#f"
+       transform="translate(65,40)"
+       id="use5420" />
+    <use
+       xlink:href="#f"
+       transform="translate(235,40)"
+       id="use5422" />
+    <use
+       xlink:href="#f"
+       transform="translate(65,160)"
+       id="use5424" />
+    <use
+       xlink:href="#f"
+       transform="translate(235,160)"
+       id="use5426" />
+  </g>
+  <path
+     style="opacity:1;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:3.86629224;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+     d="M 0.31016708,0.16528936 L 0.31016708,600.20639 L 899.95832,600.20639 L 899.95832,0.16528936 L 0.31016708,0.16528936 z M 11.55577,12.666143 L 888.71272,12.666143 L 888.71272,587.70555 L 11.55577,587.70555 L 11.55577,12.666143 z "
+     id="path5361" />
+</svg>

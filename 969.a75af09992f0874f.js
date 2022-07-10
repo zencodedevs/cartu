@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkMssp_WebUI=self.webpackChunkMssp_WebUI||[]).push([[969],{7969:(h,l,r)=>{r.d(l,{fC:()=>m}),r(8288);var d=r(9808),v=r(7423),x=r(5245),o=r(5e3);let m=(()=>{class e{}return e.\u0275fac=function(t){return new(t||e)},e.\u0275mod=o.oAB({type:e}),e.\u0275inj=o.cJS({imports:[[d.ez,v.ot,x.Ps]]}),e})()}}]);

@@ -1,0 +1,98 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mat-dialog-container {
+    padding: 0 !important;
+}
+
+.form-field-rounded .mat-form-field-flex {
+    border-radius: 3rem !important;
+}
+
+.form-field-less-padding .mat-form-field-flex {
+    min-height: initial !important;
+}
+
+.form-field-less-padding .mat-form-field-flex .mat-input-element {
+    padding: 0 !important;
+}
+
+.form-field-less-padding.mat-form-field-appearance-outline
+    .mat-form-field-infix {
+    padding: 12px !important;
+    border-top-width: 5px !important;
+}
+
+.form-field-less-padding.mat-form-field-appearance-outline
+    .mat-select-arrow-wrapper {
+    transform: translateY(40%) !important;
+}
+
+.form-field-less-padding.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label,
+.form-field-less-padding.mat-form-field-appearance-outline.mat-form-field-can-float
+    .mat-input-server:focus
+    + .mat-form-field-label-wrapper
+    .mat-form-field-label {
+    transform: translateY(-1rem) scale(0.75) !important;
+}
+
+.form-field-no-subscript .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+}
+
+.form-field-dark-outline.mat-form-field-appearance-outline
+    .mat-form-field-outline-start,
+.form-field-dark-outline.mat-form-field-appearance-outline
+    .mat-form-field-outline-gap,
+.form-field-dark-outline.mat-form-field-appearance-outline
+    .mat-form-field-outline-end {
+    border-color: theme("colors.gray.400");
+}
+
+
+
+.merchant-paginator {
+    background: transparent !important;
+
+    .mat-paginator-container {
+        justify-content: flex-end !important;
+        padding: 0 !important;
+    
+        .mat-paginator-page-size {
+           display: none !important;
+        }
+    
+        .mat-paginator-navigation-first {
+            display: none !important;
+        }
+    
+        .mat-paginator-navigation-last {
+            display: none !important;
+        }
+
+        .mat-paginator-range-actions {
+            padding: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .mat-paginator .mat-paginator-container {
+    
+        .mat-paginator-page-size {
+           display: none !important;
+        }
+    
+        .mat-paginator-navigation-first {
+            display: none !important;
+        }
+    
+        .mat-paginator-navigation-last {
+            display: none !important;
+        }
+    }
+    
+}
