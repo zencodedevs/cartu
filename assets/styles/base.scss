@@ -15,7 +15,7 @@
 }
 
 .form-field-less-padding .mat-form-field-flex .mat-input-element {
-    padding: 0 !important;
+    padding: 10px !important;
 }
 
 .form-field-less-padding.mat-form-field-appearance-outline
@@ -51,23 +51,48 @@
     border-color: theme("colors.gray.400");
 }
 
-
-
-.merchant-paginator {
+.custom-paginator.mat-paginator {
     background: transparent !important;
+}
 
+.custom-paginator.responsive-paginator.mat-paginator {
+    @media (max-width: theme("screens.sm")) {
+        .mat-paginator-container {
+            justify-content: flex-end !important;
+            padding: 0 !important;
+
+            .mat-paginator-page-size {
+                display: none !important;
+            }
+
+            .mat-paginator-navigation-first {
+                display: none !important;
+            }
+
+            .mat-paginator-navigation-last {
+                display: none !important;
+            }
+
+            .mat-paginator-range-actions {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+.custom-paginator.mini-paginator.mat-paginator {
     .mat-paginator-container {
         justify-content: flex-end !important;
         padding: 0 !important;
-    
+
         .mat-paginator-page-size {
-           display: none !important;
+            display: none !important;
         }
-    
+
         .mat-paginator-navigation-first {
             display: none !important;
         }
-    
+
         .mat-paginator-navigation-last {
             display: none !important;
         }
@@ -76,23 +101,4 @@
             padding: 0 !important;
         }
     }
-}
-
-@media (max-width: 600px) {
-
-    .mat-paginator .mat-paginator-container {
-    
-        .mat-paginator-page-size {
-           display: none !important;
-        }
-    
-        .mat-paginator-navigation-first {
-            display: none !important;
-        }
-    
-        .mat-paginator-navigation-last {
-            display: none !important;
-        }
-    }
-    
 }

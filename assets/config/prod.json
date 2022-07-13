@@ -1,7 +1,16 @@
 {
   "api_base_url": "https://mssp-api.codebase.ge",
   "api_mock_url": "API_URL",
+  "api_version": "v1",
   "resourceMonitor": {
     "pollingInterval": 20000
+  },
+  "dashboardParameters": {
+    "defaultCcy": 981,
+    "defaultDtFilter": 0
+  },
+  "idleAutoLogoutSettings": {
+    "timeToConsiderAsIdleInSeconds": 120,
+    "timeToLogoutAfterIdleInSeconds": 480
   }
 }
