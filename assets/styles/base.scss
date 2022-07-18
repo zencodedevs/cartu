@@ -2,19 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+.web-chat-button {
+    top: auto !important;
+    bottom: 20px !important;
+    left: 20px !important;
+    right: auto !important;
+}
+
+.web-chat-box {
+    left: 0;
+    right: auto;
+}
+
+.scrollbar-mini {
+    scrollbar-width: thin;
+}
+
+.scrollbar-mini::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollbar-mini::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.scrollbar-mini::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-mini::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .mat-dialog-container {
     padding: 0 !important;
+}
+
+.responsive-dialog-panel {
+    @apply w-full sm:block sm:w-140 md:w-160 h-full sm:h-auto max-w-full max-h-full;
+}
+
+@media (max-width: theme("screens.sm")) {
+    .responsive-dialog-panel .mat-dialog-container {
+        border-radius: 0 !important;
+    }
 }
 
 .form-field-rounded .mat-form-field-flex {
     border-radius: 3rem !important;
 }
 
-.form-field-less-padding .mat-form-field-flex {
+.form-field-less-padding:not(.mat-form-field-appearance-outline)
+    .mat-form-field-flex {
     min-height: initial !important;
 }
 
-.form-field-less-padding .mat-form-field-flex .mat-input-element {
+.form-field-less-padding:not(.mat-form-field-appearance-outline)
+    .mat-form-field-flex
+    .mat-input-element {
     padding: 10px !important;
 }
 

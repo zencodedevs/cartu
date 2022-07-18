@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.255" height="30.999" viewBox="0 0 108.255 30.999">
+  <g id="Group_2954" data-name="Group 2954" transform="translate(-209.404 -12841)">
+    <g id="Group_2931" data-name="Group 2931" transform="translate(282.652 12845.338)">
+      <path id="Path_5881" data-name="Path 5881" d="M-52.058,13449.307h17.986s1.949.3.944,2.359-3.105,5.905-3.105,5.905-.416,1.343-2.819,1.356-17.938,0-17.938,0l-4.946,9.586,8.563-4.882h14.321s4.017.52,5.378-1.96,5.855-10.77,6.365-11.914a4.985,4.985,0,0,0,0-3.793,2.864,2.864,0,0,0-2.932-1.79c-3.034.1-19.365,0-19.365,0Z" transform="translate(61.937 -13444.172)" fill="#007fdd"/>
+      <path id="Path_5882" data-name="Path 5882" d="M-34.523,13474.971l-2.317,4.423,16.761.009,2.333-4.128Z" transform="translate(43.646 -13467.742)" fill="#007fdd"/>
+    </g>
+    <text id="Payment" transform="translate(209.404 12857)" fill="#b8bec7" font-size="18" font-family="ArialMT, Arial"><tspan x="0" y="0">Payment</tspan></text>
+    <text id="Geteway" transform="translate(209.404 12869.999)" fill="#007fdd" font-size="9" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">Geteway</tspan></text>
+  </g>
+</svg>

@@ -12,5 +12,15 @@
   "idleAutoLogoutSettings": {
     "timeToConsiderAsIdleInSeconds": 120,
     "timeToLogoutAfterIdleInSeconds": 480
+  },
+  "transactionDetails": {
+    "viewRefundTransactionList": true,
+    "viewReversalTrasnactionList": true,
+    "viewOriginalTransaction": true,
+    "view3dInformation": false,
+    "viewCardHolderInfo": true,
+    "viewMerchantDetails": true,
+    "viewAdditionalTransactionGrouping": false,
+    "viewTransactionDetails": true
   }
 }
