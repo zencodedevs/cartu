@@ -11,7 +11,7 @@
   },
   "idleAutoLogoutSettings": {
     "timeToConsiderAsIdleInSeconds": 120,
-    "timeToLogoutAfterIdleInSeconds": 480
+    "timeToLogoutAfterIdleInSeconds": 1080
   },
   "transactionDetails": {
     "viewRefundTransactionList": true,

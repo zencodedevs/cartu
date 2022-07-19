@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
     setWebChatConfig();
     setWebChatScript();
 
-    console.log('Chat Config: ', spartezSupportChat);
+    // console.log('Chat Config: ', spartezSupportChat);
 });
 
 function setWebChatConfig() {

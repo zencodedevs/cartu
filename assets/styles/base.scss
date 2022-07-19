@@ -7,11 +7,30 @@
     bottom: 20px !important;
     left: 20px !important;
     right: auto !important;
+    box-shadow: none !important;
+}
+
+.web-chat-button:hover {
+    box-shadow: none !important;
+    opacity: 0.8 !important;
 }
 
 .web-chat-box {
-    left: 0;
-    right: auto;
+    left: 0 !important;
+    right: auto !important;
+    transform-origin: bottom left !important;
+}
+
+.web-chat-box .new-conversation:hover {
+    opacity: 0.8 !important;
+}
+
+.web-chat-button,
+.web-chat-box .top-header,
+.web-chat-box .new-conversation,
+.web-chat-box .chat-message.my,
+.web-chat-box .send-message-button-main {
+    background-color: theme("colors.primary") !important;
 }
 
 .scrollbar-mini {
